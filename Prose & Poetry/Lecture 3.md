@@ -11,3 +11,13 @@ The time of the day to eat. I hunger for something of the starch variety, howeve
 
 ### In-Class Stuff
 We talked about the creative writing process, as well as topics of revision.
+
+### A Letter to Fear (or Courage)
+Dear Fear,
+
+Thank you for looking out for me over my life, keeping me safe, and allowing me to see another day over and over. Your methods, at time, are questionable, but I found that your importance cannot be understates. I do wish that it were more of a cooperative effort between you and I, instead of a wrestling match to have you relinquish control over, but I can understand that *fear* of non-controllability that stems from a secondary agent.
+
+In the future, I expect you to do the work you do, and that I shall help guide the path for our progression so that your work isn't as required as it has been in the past. Regardless, you've been an immense help to me and my survival, knowing that the survival of one is the survival of all.
+
+Thank you for your effort,
+C. Logic
