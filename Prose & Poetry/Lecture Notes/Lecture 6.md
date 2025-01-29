@@ -3,3 +3,4 @@
 
 ---
 ### Warm-Up Exercise
+https://mycourses.rit.edu/d2l/le/content/1133850/Home

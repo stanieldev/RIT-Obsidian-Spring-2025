@@ -6,6 +6,7 @@
 Caesar wants to arrange a secret meeting with Marc Anthony, either at the Tiber (the river) or at the Coliseum (the arena). He uses a general shift cipher and sends the ciphertext `EVIRE`. However, Marc Anthony doesn’t know the key, so he tries all possibilities. Where will he meet Caesar? (Hint: this is bit of a trick question.) Write a careful description of what you did and how you arrived at your answer. How confident are you that Marc Anthony will go to the correct meeting place?
 
 > I can conclude, since the ciphertext and plaintext are of the same length, that Caesar wants to meet at `Tiber`, the river, since Tiber is a 5-letter word, and the Coliseum is not.
+> I'm an idiot. Both are 5 letter words...
 
 ### Problem 2
 A problem with the general substitution cipher method of encryption is the difficulty of remembering such a long key. A technique for simplifying this is to use a keyword to generate the permutation/key. For example, suppose your keyword is `TIGER`. From this we generate a permutation/key by starting with the keyword and then filling in the rest of the letters which do not appear in the keyword (in alphabetical order).

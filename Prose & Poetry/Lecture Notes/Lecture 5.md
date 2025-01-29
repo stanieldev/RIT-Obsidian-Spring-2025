@@ -3,3 +3,23 @@
 
 ---
 ### Warm-Up Exercise
+My first memory? I can't recall. I know it was sometime between holding my sister for the first time and when my family was stationed in Utah. I do actually remember holding her for the first time. She was surprisingly heavy, especially that I was 3.
+
+### Conversion to Poem
+Born in the month of May.
+My sister, an ordinary day.
+
+My mother gave her to us through laughter.
+She was received the same, with quiet coos, smiling.
+Small and fragile, but always smiling.
+
+She was everything, but still a blank slate.
+Little, I would know, of the girl she is today.
+
+### Types of Rhymes
+
+| Type of Rhyme     | Example               |                  |
+| ----------------- | --------------------- | ---------------- |
+| Sight Rhyme       | Plough <-> Rough      | Orange <-> Range |
+| Phonetic Straight | Cold <-> Old          |                  |
+| Phonetic Slant    | Orange <-> Door Hinge |                  |
