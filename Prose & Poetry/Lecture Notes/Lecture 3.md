@@ -2,6 +2,14 @@
 **Date:** 1/21/2025
 
 ---
+### Schedule
+**Reading due:**
+> “Writing Poetry” pages 14-36 (stop at “Meter and Rhythm”), here is an additional helpful resource about meter: http://www.literarydevices.com/meter  
+
+**In class:**
+> Warm-up write: rice; Discuss both texts (making personal connections to and between them) and favorite Poem-a-Day thus far and what resonates in it for you; Schedule 1-on 1 meetings (required)
+
+---
 ### Warm-Up Exercise
 How does/did your family cook rice?
  - Tell a story / Write an essay

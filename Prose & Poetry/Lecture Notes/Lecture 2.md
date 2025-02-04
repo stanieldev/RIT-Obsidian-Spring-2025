@@ -2,6 +2,17 @@
 **Date:** 1/16/2025
 
 ---
+### Schedule
+**Start Reading:** 
+> Poem-a-Day emails  
+
+**Reading due:** 
+> Excerpt from Big Magic & “A Few Things You Should Know About Creative Writing” & “A Few Words about Revision” (in Starkey, our required textbook, but for those who don’t have the book yet, I have posted one PDF with both chapters in Content) AND https://self-publishingschool.com/how-to-write-a-poem/#type
+
+**In class:**
+> Warm-up write: description then narrative using senses and metaphor/simile (to describe objects in this classroom or your bedroom); Share one piece of information that you learned from “A Few Things” & “A Few Words” AND one thing that resonated from Big Magic and why AND one thing from the “How to Write a Poem” website that is new to you (ideally all will connect to your personal experience)
+
+---
 ### Warm-Up Exercise
 *Describe your dorm room / main room*:
  - It is white walls with a brown vinyl flooring like wood.

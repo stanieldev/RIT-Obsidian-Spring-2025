@@ -2,6 +2,14 @@
 **Date:** 1/28/2025
 
 ---
+### Schedule
+**Reading due:**
+> “Writing Poetry” pages 36-76; Questions/ideas to consider: How does a rhyme scheme give the author authority? What kinds of rhymes appeal to you? If you tend to write in rhyme, offer some examples; if you have a rhyming poem, try writing it without the rhyme—what was the effect of this change?  
+
+**In class:**
+> Warm-up write: “My earliest memory/ies”; Discuss the text starting with answering questions above and expanding into whatever else strikes you; View Billy Collins’ TED Talk (15 mins): https://www.youtube.com/watch?v=ddw1_3ZVjTE); Anaphora exercise.
+
+---
 ### Warm-Up Exercise
 My first memory? I can't recall. I know it was sometime between holding my sister for the first time and when my family was stationed in Utah. I do actually remember holding her for the first time. She was surprisingly heavy, especially that I was 3.
 

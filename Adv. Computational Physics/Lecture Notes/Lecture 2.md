@@ -2,6 +2,7 @@
 **Date:** 1/24/2025
 
 ---
+## Numerical Integration (1 variable)
 ### Error in Trapezoid Summation
 Consider an integral bounded by $x=a$ and $x=b$:
 $$\begin{align}
@@ -50,8 +51,31 @@ $$\begin{align}
 \end{align}$$
 Finally, after some more arithmetic changes:
 $$\begin{align}
-\epsilon=-\dfrac{f''(b)-f''(a)}{12}h^2
+\epsilon=-\dfrac{f'(b)-f'(a)}{12}h^2
 \end{align}$$
 ### Error in Simpson Summation
 Similar to Trapezoid, but higher order since Simpson's rule applies to parabolas.
 $$\epsilon=\dfrac{f^{(3)}(b)-f^{(3)}(a)}{180}h^4$$
+## Ordinary Differential Equations
+
+### First-Order Differential Equations
+The general form can be written as:
+$$\begin{align}
+\dfrac{dy}{dx}=f(x,y)
+\end{align}$$
+So solve we must have the initial condition $(x_0,y(x_0))$.
+### Second-Order Differential Equations
+The general form can be written as:
+$$\begin{align}
+\dfrac{d^2x}{dt^2}=f(x,\dot{x},t)
+\end{align}$$
+So solve we must have the initial conditions $(t_0,x(t_0),\dot{x}(t_0))$.
+### Euler's Method
+The general form can be written as:
+$$\begin{align}
+y(t+\delta t)=y(t)+\dot{y}(t)\delta t+O(\delta t^2)
+\end{align}$$
+Substituting from earlier, we can also write it as:
+$$\begin{align}
+\dfrac{dy}{dx}=f(x,y)\implies y(t+\delta t)=y(t)+f(y,t)\delta t+O(\delta t^2)
+\end{align}$$

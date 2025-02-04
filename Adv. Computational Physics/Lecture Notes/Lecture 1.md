@@ -2,7 +2,7 @@
 **Date:** 1/17/2025
 
 ---
-## Numerical Integration
+## Numerical Integration (1 variable)
 ### Riemann Summation (Degree 0)
 There are types of common integration: Left, Right, and Middle.
 $$\text{Riemann Sum}=\sum_i f(x_i)\Delta x_i$$
