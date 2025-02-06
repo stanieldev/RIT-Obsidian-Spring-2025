@@ -70,7 +70,7 @@ $$\begin{align}
 \end{align}$$
 Repeating the above for the other eigenvalue swaps the trigonometry substitutions and introduces a negative, which results in the following being true:
 $$\begin{align}
-\Aboxed{\lambda=-\hbar/2 \implies \chi_-^r&=\begin{bmatrix}\sin(\theta/2)\\-e^{i\phi}\cos(\theta/2)\end{bmatrix}}
+\Aboxed{\lambda=-\hbar/2 \implies \chi_-^r&=\begin{bmatrix}e^{-i\phi}\sin(\theta/2)\\-\cos(\theta/2)\end{bmatrix}}
 \end{align}$$
 ### Question 3
 Consider the spin operator $S_y$ for a spin $1/2$ particle.
@@ -125,7 +125,7 @@ Consider a particle of spin $1$. Follow the procedure used in class for spin $1/
 Write down a matrix representation for the basis states.
 $$\begin{align}
 \ket{1,1}&=\begin{bmatrix}1\\0\\0\end{bmatrix}\\
-\ket{1,1}&=\begin{bmatrix}0\\1\\0\end{bmatrix}\\
+\ket{1,0}&=\begin{bmatrix}0\\1\\0\end{bmatrix}\\
 \ket{1,-1}&=\begin{bmatrix}0\\0\\1\end{bmatrix}
 \end{align}$$
 #### Question 4.2
