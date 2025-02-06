@@ -36,14 +36,14 @@ What is War?
 
 
 ### Brand New Poem
-#### What is War?
+#### War
 *Inspired by “The Box” by Lascelles Abercrombie*
 
 War is about needless sacrifice.
 War is about revenge and hatred.
 War is about control and power.
 War is about anger and enslavement.
-War not is about us, nor them.
+War is not about us, nor them.
 
 People do not fight wars, soldiers do.
 Soldiers are a number; their skill, a statistic.
