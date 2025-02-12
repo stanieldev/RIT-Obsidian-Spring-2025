@@ -27,4 +27,4 @@ GCDs and LCMs
  -> Dot products should lead to similarity.
  -> What should the square of the basis vectors make?
  -> Could we allow for cartesian products of $P$?
- 
+
