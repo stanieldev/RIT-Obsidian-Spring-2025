@@ -30,3 +30,7 @@ For cases when we don't necessarily have the derivative, we can approximate it u
 Start from an initial guesses $x_0$ and $x_1$, then:
 $$x_{n+1}=x_n-\dfrac{f(x_n)}{f(x_n)-f(x_{n-1})}(x_n-x_{n-1})$$
 This is effectively the finite version of Newton's method.
+
+## Shooting Method
+Binary Partition to get a solution to a differential equation by finding which side satisfies quicker.
+

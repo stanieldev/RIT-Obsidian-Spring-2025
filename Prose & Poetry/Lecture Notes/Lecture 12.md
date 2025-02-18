@@ -6,3 +6,4 @@
 
 ---
 ### Warm-Up Exercise
+None, no class.
