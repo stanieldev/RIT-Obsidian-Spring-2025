@@ -107,6 +107,8 @@ $$\begin{align}
 \end{align}$$
 #### Question 3.3
 If you measured $S_y$ on a particle in the state $\chi=a\chi_+^z+b\chi_-^z$ what values might you get and with what probability of each?
+
+**Post Note:** This solution is incorrect.
 $$\begin{align}
 p(\chi_+^Y|\chi)&=\left|\braket{\chi_+^Y|\chi}\right|^2\\
 &=\left|\dfrac{1}{\sqrt{2}}\begin{bmatrix}1&i\end{bmatrix}\dfrac{1}{\sqrt{|a|^2+|b|^2}}\begin{bmatrix}a\\b\end{bmatrix}\right|^2\\

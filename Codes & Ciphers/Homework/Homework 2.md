@@ -189,9 +189,9 @@ Explain your answer.
 
 To change this number to get something equal in this system, we can see that:
 $$\begin{align}
-x+21\cdot10\cdot13\equiv19\mod21\\
-x+21\cdot10\cdot13\equiv2\mod10\\
-x+21\cdot10\cdot13\equiv1\mod13\\
+x+21\cdot10\cdot13&\equiv19\mod21\\
+x+21\cdot10\cdot13&\equiv2\mod10\\
+x+21\cdot10\cdot13&\equiv1\mod13\\
 \end{align}$$
 So if we call $b=21\cdot10\cdot13=2370$, we can add and subtract that from our $x$ and it will still be a solution to our system. That means the following are solutions to the system:
 $$\begin{align}

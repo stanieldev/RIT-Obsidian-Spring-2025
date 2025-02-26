@@ -38,7 +38,7 @@ $$\begin{align}
 \alpha^{-1}(y-\beta)\equiv x\mod 26\\
 \end{align}$$
 ### Keys
-The requirement for $\alpha$ is that it must satisfy $\gcd(\alpha,1)=1$, and so:
+The requirement for $\alpha$ is that it must satisfy $\gcd(\alpha,26)=1$, and so:
 $$|\alpha|=\phi(26)=12$$
 For Beta, it can take $26$ different values, and so the total permutation count comes to:
 $$|\alpha|\cdot|\beta|=12\cdot26=312$$

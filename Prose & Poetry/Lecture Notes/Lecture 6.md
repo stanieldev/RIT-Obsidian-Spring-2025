@@ -7,7 +7,7 @@
 > 1-2 NEW original poems from a “kick-start” prompt or from A Year of Prompts (kick-starts are in the textbook at the end of every genre and AYoP is in Content -> Assignment Resources).
 
 **In class:**
-> Warm-up write TBA; Discuss another poem from the Poem-a-Day email; Share/workshop new poems; erasure poetry (erasure.alanharnum.ca)
+> Warm-up write Bernadette Mayer experiments; Discuss another poem from the Poem-a-Day email; Share/workshop new poems; erasure poetry (erasure.alanharnum.ca)
 
 ---
 ### Warm-Up Exercise (Changing rhymes of a song)

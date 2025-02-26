@@ -4,7 +4,7 @@
 ---
 ### Schedule
 **In class:** 
-> Warm-up write TBA; Discussion of character sketches and dialogues in small groups
+> Warm-up write Anaphora; Sharing favorite ASL and Button Poetry poems and poem videos and from textbook or written by you; Look at poems of witness, headstone poetry, etc.; Fun with erasure poetry!
 
 ---
 ### Warm-Up Exercise

@@ -13,7 +13,7 @@
 > Poem revision with revision statement in Assignment dropbox (A revision statement is a 1-3 sentence statement outlining what you changed and why. Example: “Steven pointed out that I needed to fix a couple of rhymes. Professor V suggested I try using more concrete nouns.” These Revision Statements are required for all required revisions in all four of our creative writing genres.)  
 
 **In class:**
-> Warm-up write TBA; Sharing favorite poems and poem videos.
+> Warm-up write Bernadette Mayer experiments.
 
 ---
 ### Warm-Up Exercise

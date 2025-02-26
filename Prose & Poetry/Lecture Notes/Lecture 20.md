@@ -3,6 +3,8 @@
 
 ---
 ### Schedule
+**CARY COLLECTION VISIT**  
+> Meet at Wallace 2410 by classtime
 
 ---
 ### Warm-Up Exercise

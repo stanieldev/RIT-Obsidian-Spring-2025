@@ -15,6 +15,7 @@ E&=\dfrac{g_SB_0\hbar}{2}\\
 ---
 #### Question 1.1
 If we measure the spin along the $x$-axis at any time $t$, what is the probability we get $+\tfrac{\hbar}{2}$?
+**Post Note:** This solution is incorrect.
 $$\begin{align}
 p(\chi_+^X|\chi(t))&=\left|\braket{\chi_+^X|\chi(t)}\right|^2\\
 &=\left|\dfrac{1}{\sqrt{2}}\begin{bmatrix}1&1\end{bmatrix}\begin{bmatrix}ae^{iEt/\hbar}\\be^{-iEt/\hbar}\end{bmatrix}\right|^2\\
@@ -30,6 +31,7 @@ p(\chi_+^X|\chi(t))&=\left|\braket{\chi_+^X|\chi(t)}\right|^2\\
 \end{align}$$
 #### Question 1.2
 If we measure the spin along the $y$-axis at any time $t$, what is the probability we get $+\tfrac{\hbar}{2}$?
+**Post Note:** This solution is incorrect.
 $$\begin{align}
 p(\chi_+^Y|\chi(t))&=\left|\braket{\chi_+^Y|\chi(t)}\right|^2\\
 &=\left|\dfrac{1}{\sqrt{2}}\begin{bmatrix}1&i\end{bmatrix}\begin{bmatrix}ae^{iEt/\hbar}\\be^{-iEt/\hbar}\end{bmatrix}\right|^2\\
