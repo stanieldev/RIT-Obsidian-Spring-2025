@@ -14,3 +14,4 @@
 
 ---
 ### Warm-Up Exercise
+Skipped class for SoPA Head Candidate.

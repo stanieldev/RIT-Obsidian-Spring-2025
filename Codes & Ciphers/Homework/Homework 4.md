@@ -64,7 +64,7 @@ $$\begin{align}
 Alice is sending encrypted messages to Bob using a Hill cipher with block size 2. Eve acquires access to Alice’s encryption device and is able to quickly submit the plaintext "warble" through the device and determines that the corresponding ciphertext is "CUSTDK".
 #### Problem 2.A
 Determine the $2\times2$ key matrix.
-> $A=\begin{bmatrix}19&8\\7&13\end{bmatrix}$
+> $A=\begin{bmatrix}19&7\\8&13\end{bmatrix}$
 > Using the word "warble" and "CUSTDK" gave me enough information to uniquely define the matrix, so I didn't need to test multiple solutions on 2.B to verify which was which.
 
 ---
@@ -102,6 +102,7 @@ if __name__ == "__main__":
                 break
 ```
 > From there, I had to find the inverse matrix under mod 26, and after using the inverse matrix of a 2x2 and inverse determinant, I was able to find that:
+> (incorrect matrix, it's the transpose)
 $$A=\begin{bmatrix}19&8\\7&13\end{bmatrix}\implies A^{-1}=\begin{bmatrix}13&2\\5&5\end{bmatrix}$$
 > Using the inverse, it's quite simple to find the plain text from there. I wrote code to do the multiplications for me and the conversion back to string letters.
 

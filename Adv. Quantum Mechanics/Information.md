@@ -12,7 +12,3 @@ For the case of the particle in an infinite potential well, it surprisingly is t
 
 
 When I plug in the QHO solution, the difference in entropy between states is unchanging upon changing mass and angular frequency.
-
-
-
-**Von Neumann Entropy**
