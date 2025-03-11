@@ -59,4 +59,3 @@ since the cosets are of the form $a+n\mathbb{Z}$, where $a\in\mathbb{Z}$ and $a\
 
 For understanding, call them "Partition Group" because that makes wayyy more sense.
 
-

@@ -75,3 +75,32 @@ $$\begin{align}
 \left\langle(\Delta x)^2\right\rangle_\pm&=\left\langle x^2\right\rangle_a+\left\langle x^2\right\rangle_b-2\left\langle x\right\rangle_a\left\langle x\right\rangle_b\mp2\left|\left\langle x\right\rangle_{ab}\right|^2\\
 \left\langle x\right\rangle_{ab}&=\begin{cases}0, & \text{Distinguishable}\\1, & \text{Indistinguishable}\end{cases}
 \end{align}$$
+---
+### Variational Principle
+$$\begin{align}
+E_\text{gs}\le\bra{\psi}\hat{H}\ket{\psi}
+\end{align}$$
+
+### Perturbation Theory (NDTIPT)
+$$\begin{align}
+E^1_n&=\bra{\psi_n^0}\hat{H}^1\ket{\psi_n^0}\\
+\psi_n^1&=\sum_{m\ne n}\dfrac{\bra{\psi_m^0}\hat{H}'\ket{\psi_n^0}}{E^0_n-E^0_m}\psi_m^0
+\end{align}$$
+### Perturbation Theory (DTIPT)
+$$\begin{align}
+W^n_{ij}&=\bra{\psi_i^n}\hat{H}^{n+1}\ket{\psi_j^n}\\
+W^n\ket{\psi^n}&=E^{n+1}\ket{\psi^n}
+\end{align}$$
+### Perturbation Theory (DTDPT)
+$$\begin{align}
+\psi(t)&=c_a(t)\psi_ae^{-iE_at/\hbar}+c_b(t)\psi_be^{-iE_bt/\hbar}\\
+\dot{c}^{n+1}_i(t)&=-\dfrac{i}{\hbar}\left(c^{n}_i\hat{H}^1_{ii}+c^{n}_j\hat{H}^1_{ij}e^{-i(E_j-E_i)t/\hbar}\right)
+\end{align}$$
+### WKB Approximation
+$$\begin{align}
+p(x)&=\sqrt{2m(E-V(x))}\\
+\phi(x)&=\dfrac{1}{\hbar}\int^x_a p(x')\ dx'\\
+\psi(x)&=\dfrac{c}{\sqrt{p(x)}}e^{\pm i\phi(x)}
+\end{align}$$
+
+Rabi Problem and Beyond (Lecture 17+)

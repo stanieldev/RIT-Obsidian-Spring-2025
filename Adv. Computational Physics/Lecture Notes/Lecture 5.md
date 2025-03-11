@@ -35,6 +35,6 @@ $$\begin{align}
 \dfrac{\partial\phi(\chi)}{\partial \chi}&=2[V(\chi)-E]\psi(\chi)
 \end{align}$$
 ### Final Observations
- - Use RK5 to calculate eigenfunctions.
+ - Use RK4 to calculate eigenfunctions.
  - Use root solvers to calculate eigenvalues.
  - Use numerical integration to normalize wavefunctions.

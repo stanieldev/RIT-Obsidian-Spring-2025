@@ -108,7 +108,7 @@ $$\begin{align}
 We can write it as a function $G$ such that $G(\phi)=0$, and so we can use the relaxation method.
 Rearranging, we can get the following:
 $$\begin{align}
-\phi_{i,j}&=\dfrac{1}{4}\left(\phi_{i+1,j}+\phi_{i-1,j}+\phi_{i,j+1}-\phi_{i,j-1}\right)+\pi a^2\rho_{i,j}
+\phi_{i,j}&=\dfrac{1}{4}\left(\phi_{i+1,j}+\phi_{i-1,j}+\phi_{i,j+1}+\phi_{i,j-1}\right)+\pi a^2\rho_{i,j}
 \end{align}$$
 We can then transform it into a fixed point problem as:
 $$\begin{align}
