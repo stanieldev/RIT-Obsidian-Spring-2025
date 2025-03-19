@@ -9,29 +9,7 @@ Have a timeline of how I've done work and troubles I've found along the way.
 
 
 
+### Introduction   (Narrative, no subsections)
+Binary neutron star mergers (BNSMs) are among the most extreme astrophysical events, serving as experimental laboratories for determining the fundamental physics of our universe. During the process of BNSMs, these stars provide significant insight into the interplay between high-energy nuclear physics and massive relativistic effects, as well as generate powerful gravitational waves, eject neutron-rich material, and drive the synthesis of heavy elements through rapid neutron capture (r-process) nucleosynthesis. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Abstract
-Binary neutron star mergers (BNSMs) are an important process to study for understanding extreme astrophysical phenomena, providing insights into nuclear microphysics and general relativity through multi-messenger astronomy.
-
-
-
-
- However, high-fidelity simulations of BNSMs are computationally demanding due to the need to resolve dense nuclear matter, tidal interactions, and gravitational wave emission. In this paper, we focus on improving simulation efficiency through Adaptive Mesh Refinement (AMR) and Dynamic Time Scaling (DTS)—a technique that increases time steps in regions with a lower Stress-Energy tensor to optimize performance. We also analyze benchmark profiling data from the Einstein Toolkit, identifying computational bottlenecks in BNSM simulations. To test the efficacy of AMR + DTS, we implement a Python-based simulation of an alternative physical system, avoiding the complexity of full general relativity while preserving key computational challenges. By refining numerical techniques and reducing unnecessary computational overhead, this study provides a foundation for more efficient astrophysical simulations, enabling deeper exploration of neutron star mergers and their associated signatures.
+Understanding BNSMs, as well as neutron stars by themselves, are essential for constraining the equation of state (EOS) of ultra-dense matter, a significant challenge to current astrophysics. The EOS assumed to be a universal condition of dense nuclear matter, independent of the origin of the stars. The accurate modeling of EOS's are especially integral for determining neutron star properties such as mass, radius, binding energy, moment of inertia, and tidal deformation. Numerous theoretical models have aimed to describe the matter within neutron stars, each predicting distinct observable signatures. e.g. Upper mass threshold, binding energy, etc. These models, then, provide precise EOS constraints as a vital aspect of neutron star physics.

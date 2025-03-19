@@ -3,6 +3,9 @@
 
 ---
 
+Symmetric Encryption: Same key for encryption and decryption.
+Asymmetric Encryption: Different key for encryption and decryption.
+
 ### Diffie-Hellman Key Exchange
 Public Info: Prime $p$, and primitive root $g$.
 $$\begin{align}
