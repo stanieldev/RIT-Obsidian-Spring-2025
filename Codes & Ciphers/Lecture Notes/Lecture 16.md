@@ -53,16 +53,6 @@ m=s^{-1}c_2\mod p
 \end{align}$$
 
 
-
-
-
-
-
-
-
-
-
-
 ### Example
 Let $p=59$, $g=2$, and $a=16$.
 $$\begin{align}

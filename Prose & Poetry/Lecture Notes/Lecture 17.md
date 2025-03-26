@@ -21,6 +21,4 @@
 
 I love the color green, as there are few colors I can mess with my dad with, since he is deficient in distinguishing between green and red. Fortunately, he is not blind to it, but often can get them mixed up at lower saturation levels. Forever it is a joke that we use against him, and a joke he makes on his own to beat us to the punch. I absolutely love my dad, and luckily I do not have the same affliction, nor can I pass it on. However, my sisters have the capability to pass it on to any male offspring they have, so we'll see if that ever appears in our family. Unlucky them.
 
-
-
 I didn't read the prompt `;_;`

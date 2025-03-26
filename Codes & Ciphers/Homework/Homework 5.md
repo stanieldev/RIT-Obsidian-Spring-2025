@@ -25,7 +25,7 @@ $$\begin{align}
 From your calculations in part (a), identify all the elements of $(\mathbb{Z}/14\mathbb{Z}, +)$ that generate the
 entire group.
 
-> All numbers $0\ge n<14$ who are coprime with $14$ will generate the entire group.
+> All numbers $0\le n<14$ who are coprime with $14$ will generate the entire group.
 > That means that only $\braket{1},\braket{3},\braket{5},\braket{9},\braket{11},\braket{13}$ generate $(\mathbb{Z}/14\mathbb{Z}, +)$.
 > Since I know that $\phi(14)=6$, I know I have all values that can generate this group.
 

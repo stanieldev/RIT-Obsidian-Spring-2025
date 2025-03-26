@@ -15,3 +15,6 @@
 
 ---
 ### Warm-Up Exercise
+Topic: "Rain"
+
+Upon my metal roof, the pitter patter of spring has arrived.
