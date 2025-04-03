@@ -8,3 +8,4 @@
 
 ---
 ### Warm-Up Exercise
+We looked at a modern art piece and talked about it.

@@ -11,3 +11,4 @@
 
 ---
 ### Warm-Up Exercise
+No class!

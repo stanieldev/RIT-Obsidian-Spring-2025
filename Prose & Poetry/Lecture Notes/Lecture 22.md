@@ -14,4 +14,5 @@
 > Do: Take a substantial awe walk (or two) and post about your experience; discuss others’ posts
 
 ---
-### Warm-Up Exercise
+### ### Warm-Up Exercise
+No class!
