@@ -19,3 +19,10 @@ We can then see:
 $$\begin{align}
 \int(\vec\nabla_v^2\rho)(\ln\rho+1)&=-\int\dfrac{1}{\rho}(\vec\nabla_v\rho)^2\\
 \end{align}$$
+
+
+
+
+
+Suppose "Action" but instead of an $\epsilon$ it's some form of $e^{E/kT}$.
+Minimal action at T=0, perhaps?
