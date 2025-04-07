@@ -1,58 +1,62 @@
 **Name:** Stanley Goodwin
-**Date:** 3/28/2025
+**Date:** 4/4/2025
+
+---
+## Gaussian Process Regression with Custom Kernels
+### Regression in Physics
+Regression is the process of approximating a function from a finite data set.
+### The Curse of Dimensionality
+As you add dimensions, the number of points increases exponentially.
+The only way to overcome it is to imbue "prior knowledge" about the function we aim to learn with our regression model.
+### Prior Probability Distribution
+A prior represents our initial belief about the function before seeing data.
+We constrain the function space in a controlled fashion.
+ - We can assume it's a linear combination of basis functions with coefficients.
+ - These coefficients come from a probability distributions.
+These features define an ensemble of possible functions before data is observed.
+
+#### Example
+We start with a polynomial function of degree 5 over interval $x\in[-1,1]$:
+$$f(x)=c_0+c_1x+c_2x^2+c_3x^3+c_4x^4+c_5x^5$$
+where $c_i$ are random variables with distribution calculated such that the function and its derivative are more likely to be within the controlled range.
+$$p[f]\propto\exp\left(-\dfrac{t}{2}\int_{-1}^1f(x)^2\ dx-\dfrac{\kappa}{2}\int_{-1}^1f'(x)^2\ dx\right)$$
+Where $t,\kappa$ are "hyperparameters" to help control the probability calculation.
+The function term makes it more likely in the interval, derivative term constraints it to be smooth.
+
+### Posterior Probability Distribution
+The posterior favors functions that pass near to the observed points while account for uncertainty.
+The posterior mean gives the most probable function, variance quantifies uncertainty.
+The larger the standard deviation, the function is less constrained by corresponding observation.
+The combination of data and our prior defines an updated ensemble probability distribution.
+
+The posterior distribution is derived from Bayes Theorem as:
+$$p(f|D)=p[f]\cdot\dfrac{p(D|f)}{p(D)}\propto p[f]\cdot e^{\sum\tfrac{1}{2\sigma_\alpha^2}\left(f(x_\alpha)-f_\alpha\right)^2}$$
+where $D$ is the data and $f$ is the chosen function.
 
 ---
 
-### Monte-Carlo Integration (Mean-Value Method)
-Given a probability density $\rho(x)$, the expected value of $f(x)$ is:
+### Mathematical Encoding of the Prior
+We can represent functions as a sum over a set of basis functions $T_s(x)$:
 $$\begin{align}
-E\left[f(x)\right]&=\int\rho(x)f(x)\ dx\\
-E\left[f(x)\right]&=\lim_{N\rightarrow\infty}\dfrac{1}{N}\sum_{i=1}^Nf(x_i)\\
+f(x)&=\sum_{s=1}^S\xi_sT_s(x)
 \end{align}$$
-For calculating a generic integral, we can define a random variable:
-$$\begin{align}
-s&=\dfrac{1}{N}\sum_{i=1}^Nf(x_i)\\
-\end{align}$$
-Then we can approximate the integral since:
-$$\begin{align}
-E[s]&=\dfrac{1}{N}\sum_{i=1}^NE[f(x_i)]\\
-&=\dfrac{1}{N}NE[f(x)]\\
-\Aboxed{E[s]&=E[f(x)]}
-\end{align}$$
-And the variance:
-$$\begin{align}
-\sigma^2&=E[s^2]-E[s]^2\\
-\Aboxed{\sigma^2&=\dfrac{1}{N}\left(E[f^2]-E[f]^2\right)}
-\end{align}$$
-### Monte-Carlo Integration (Importance Sampling)
-An observation we can see is:
-$$\begin{align}
-I&=\int g(x)\ dx=\int p(x)\dfrac{g(x)}{p(x)}\ dx=\int p(x)f(x)\ dx
-\end{align}$$
-
-### Monte-Carlo Summation (Mean-Value Method)
-Same as integration, just discrete.
+The prior is a probability distribution over the coefficients $\xi_s$:
 
 
-### Ising Model
-A grid of local spin groups with energy:
+For example, action could be determined in terms of hyperparameters as the following:
 $$\begin{align}
-E_\alpha&=-\sum_{\braket{ij}}\sigma_i\sigma_j-H\sum_i\sigma_i
+S[f]&=\dfrac{1}{2}\sum_{ss'}A_{ss'}\xi_s\xi_{s'}=\int_D\left[\dfrac{t}{2}f(x)^2+\dfrac{\kappa}{2}(\vec\nabla f)^2+\dfrac{\epsilon}{2}\sum_s\xi_s^2\right]
 \end{align}$$
-where the $\braket{ij}$ is all pairs that are adjacent in the lattice, $J$ is the spin interaction strength, and $H$ is the applied magnetic field to the system.
+From the prior, we define a kernel function which represents how function values at different points are correlated and fully encodes our prior information:
+$$\begin{align}
+K(x,x')&=\braket{f(x)f(x')}=\sum_{s,s'=1}^S[A^{-1}]_{ss'}T_s(x)T_{s'}(x')
+\end{align}$$
+Given a dataset composed by $(x_\alpha,E_\alpha,\sigma_\alpha)$, we calculate the kernel matrix as follows:
+$$\begin{align}
+\bar{K}_{\alpha\beta}&=K(x_\alpha,x_\beta)+\sigma_\alpha^2\delta_{\alpha\beta}
+\end{align}$$
 
-If the canonical system is in thermal equilibrium with a heat bath of temperature $T$, then:
+And posterior variance:
 $$\begin{align}
-p(E_\alpha)&=\dfrac{1}{Z}e^{-E_\alpha/kT} & Z&=\sum_{\alpha=0}^{2^\nu-1}e^{-E_\alpha/kT}
+\sigma^2_\text{post}(x)&=K(x,x)-\sum_{\alpha,\beta}K(x,x_\alpha)[\bar{K}^{-1}]_{\alpha\beta}K(x_\beta,x)
 \end{align}$$
-We can then calculate the expected values of the statistical properties:
-$$\begin{align}
-\braket{E}&=\sum_{\alpha=0}^{2^\nu-1}p(E_\alpha)E_\alpha\\
-\braket{M}&=\sum_{\alpha=0}^{2^\nu-1}p(E_\alpha)M_\alpha\\
-\end{align}$$
-### Markov Chain Method
-The Markov chain Method enables us to systematically sample $\alpha_n$ with desired probability $p_\alpha$ without having to calculate the normalization $Z=\sum_\alpha p_\alpha$.
-
-Markov Chains have no memory other than the current state.
-https://mycourses.rit.edu/d2l/le/content/1132638/viewContent/10816080/View
-Continue later.

@@ -1,66 +1,58 @@
 **Name:** Stanley Goodwin
-**Date:** 3/21/2025
+**Date:** 3/28/2025
 
 ---
-## Random Numbers and Monte-Carlo Integration
-### Randomness in Physics
- Random processes are commonly encountered in physics:
-  - Measurements of observables in Quantum Mechanics.
-  - Particle decays.
-  - Decay of unstable isotopes.
-  - Brownian motion
 
-Random numbers (Monte-Carlo Simulations) allow us to tackle complex problems.
- - Computational Integrals
- - Randomized Linear Algebra
-////
+### Monte-Carlo Integration (Mean-Value Method)
+Given a probability density $\rho(x)$, the expected value of $f(x)$ is:
+$$\begin{align}
+E\left[f(x)\right]&=\int\rho(x)f(x)\ dx\\
+E\left[f(x)\right]&=\lim_{N\rightarrow\infty}\dfrac{1}{N}\sum_{i=1}^Nf(x_i)\\
+\end{align}$$
+For calculating a generic integral, we can define a random variable:
+$$\begin{align}
+s&=\dfrac{1}{N}\sum_{i=1}^Nf(x_i)\\
+\end{align}$$
+Then we can approximate the integral since:
+$$\begin{align}
+E[s]&=\dfrac{1}{N}\sum_{i=1}^NE[f(x_i)]\\
+&=\dfrac{1}{N}NE[f(x)]\\
+\Aboxed{E[s]&=E[f(x)]}
+\end{align}$$
+And the variance:
+$$\begin{align}
+\sigma^2&=E[s^2]-E[s]^2\\
+\Aboxed{\sigma^2&=\dfrac{1}{N}\left(E[f^2]-E[f]^2\right)}
+\end{align}$$
+### Monte-Carlo Integration (Importance Sampling)
+An observation we can see is:
+$$\begin{align}
+I&=\int g(x)\ dx=\int p(x)\dfrac{g(x)}{p(x)}\ dx=\int p(x)f(x)\ dx
+\end{align}$$
 
-### Randomness in Random Number Generators
-Example: Linear Congruential Generator:
-$$x'=(ax+c)\mod m$$
-Where $a$ is the multiplier, $c$ is the increment, and $m$ is the modulus.
-This is a deterministic random value.
+### Monte-Carlo Summation (Mean-Value Method)
+Same as integration, just discrete.
 
-### Inverse Transform Method for Sampling from generic $p(E)$
-Given the CDF as:
-$$F(E)=\int_{E_\text{min}}^Ep(E')\ dE'$$
-Then:
-$$E=F^{-1}(x)$$
-### Exponential Decay Law
-We will need conditional probability for Markov Chain Method.
+
+### Ising Model
+A grid of local spin groups with energy:
 $$\begin{align}
-S(t|0)&=2^{-t/\tau} & P(t|0)&=1-2^{-t/\tau}
+E_\alpha&=-\sum_{\braket{ij}}\sigma_i\sigma_j-H\sum_i\sigma_i
 \end{align}$$
-#### Decay of an Isotope
-For the decay of the following:
+where the $\braket{ij}$ is all pairs that are adjacent in the lattice, $J$ is the spin interaction strength, and $H$ is the applied magnetic field to the system.
+
+If the canonical system is in thermal equilibrium with a heat bath of temperature $T$, then:
 $$\begin{align}
-^{208}\text{Tl}\ \rightarrow\ ^{208}\text{Pb} + e^-+\bar\nu_e
+p(E_\alpha)&=\dfrac{1}{Z}e^{-E_\alpha/kT} & Z&=\sum_{\alpha=0}^{2^\nu-1}e^{-E_\alpha/kT}
 \end{align}$$
-We write that:
+We can then calculate the expected values of the statistical properties:
 $$\begin{align}
-P(t|0)&=1-2^{-t/\tau}
+\braket{E}&=\sum_{\alpha=0}^{2^\nu-1}p(E_\alpha)E_\alpha\\
+\braket{M}&=\sum_{\alpha=0}^{2^\nu-1}p(E_\alpha)M_\alpha\\
 \end{align}$$
-### Monte-Carlo Integration
-#### Example
-Suppose we want to evaluate the following integral:
-$$\begin{align}
-I&=\int_0^2\sin^2\left(\dfrac{1}{x(2-x)}\right)
-\end{align}$$
-#### Hit-Or-Miss
-We sample a bunch of random points with the probability of the function.
-If we know the domain and range, we can approximate the area as the proportion of the points sampled from the domain$\times$range that is under the curve.
-#### Mean Value Method
-Key observation: Given the probability density $\rho(x)$, the expectation value can be calculated as:
-$$\begin{align}
-E\left[f(x)\right]&=\int\rho(x)f(x)\ dx & \text{(Continuous)}\\
-E\left[f(x)\right]&=\lim_{N\rightarrow\infty}\dfrac{1}{N}\sum
-_{n=1}^Nf(x_n) & \text{(Discrete)}\\
-\end{align}$$
-If we define a random variable:
-$$\begin{align}
-s&=\dfrac{b-a}{N}\sum
-_{n=1}^Nf(x_n)
-\end{align}$$
-Then the expected value can calculate the integral as an approximation.
-The error is found with the standard deviation.
-It also has an error that always scales as $1/\sqrt{N}$, independent of dimension.
+### Markov Chain Method
+The Markov chain Method enables us to systematically sample $\alpha_n$ with desired probability $p_\alpha$ without having to calculate the normalization $Z=\sum_\alpha p_\alpha$.
+
+Markov Chains have no memory other than the current state.
+https://mycourses.rit.edu/d2l/le/content/1132638/viewContent/10816080/View
+Continue later.
