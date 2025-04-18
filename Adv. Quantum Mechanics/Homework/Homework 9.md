@@ -17,7 +17,6 @@ Find the scattering amplitude $f(\theta)$.
 $$\begin{align}
 -\dfrac{\hbar^2}{2m}\dfrac{d^2}{dr^2}u(r)+V(r)u(r)&=\dfrac{\hbar^2k^2}{2m}u(r)\\
 \left[\dfrac{d^2}{dr^2}+k^2-\dfrac{2m\alpha}{\hbar^2}\delta(r-a)\right]u(r)&=0\\
-\left[\dfrac{d^2}{dr^2}+k^2-\dfrac{2m\alpha}{\hbar^2}\delta(r-a)\right]u(r)&=0\\
 \end{align}$$
 Where $k=\dfrac{\sqrt{2mE}}{\hbar}$.
 
@@ -36,50 +35,49 @@ $$\begin{align}
 Since the system must be continuous at the point $r=a$:
 $$\begin{align}
 &&\lim_{r\rightarrow a^-}u(r)&=\lim_{r\rightarrow a^+}u(r)\\
-\implies&& \Aboxed{A\sin(ka)&=A'\sin(ka+\delta)}
+\implies&& A\sin(ka)&=A'\sin(ka+\delta)\\
+\implies&& \Aboxed{A&=A'\dfrac{\sin(ka+\delta)}{\sin(ka)}}
 \end{align}$$
 The derivative is discontinuous at $r=a$:
 $$\begin{align}
 &&\lim_{r\rightarrow a^+}u'(r)-\lim_{r\rightarrow a^-}u'(r)&=\dfrac{2m\alpha}{\hbar^2}\lim_{r\rightarrow a}u(r)\\
 \implies&&kA'\cos(ka+\delta)-kA\cos(ka)&=\dfrac{2m\alpha}{\hbar^2}A\sin(ka)\\
-\implies&&\Aboxed{A'\cos(ka+\delta)-A\cos(ka)&=\dfrac{2m\alpha}{k\hbar^2}A\sin(ka)}
+\implies&&A'\cos(ka+\delta)-A\cos(ka)&=\dfrac{2m\alpha}{k\hbar^2}A\sin(ka)\\
+\implies&&\Aboxed{\dfrac{2m\alpha}{k\hbar^2}\sin(ka)+\cos(ka)&=\dfrac{A'}{A}\cos(ka+\delta)}
 \end{align}$$
-We then have 2 relations:
+Combining the two above, we find that:
 $$\begin{align}
-A&=A'\cdot\dfrac{\sin(ka+\delta)}{\sin(ka)}\\
-\dfrac{2m\alpha}{k\hbar^2}A\sin(ka)&=A'\cos(ka+\delta)-A\cos(ka)\\
-\dfrac{2m\alpha}{k\hbar^2}&=\dfrac{A'}{A}\dfrac{\cos(ka+\delta)}{\sin(ka)}-\cot(ka)\\
-\dfrac{2m\alpha}{k\hbar^2}&=\dfrac{\sin(ka)}{\sin(ka+\delta)}\dfrac{\cos(ka+\delta)}{\sin(ka)}-\cot(ka)\\
-\dfrac{2m\alpha}{k\hbar^2}&=\cot(ka+\delta)-\cot(ka)\\
-ka+\delta&=\cot^{-1}\left(\dfrac{2m\alpha}{k\hbar^2}+\cot(ka)\right)\\
-\Aboxed{\delta&=\cot^{-1}\left(\dfrac{2m\alpha}{k\hbar^2}+\cot(ka)\right)-ka}
+\dfrac{A'}{A}&=\dfrac{\sin(ka)}{\sin(ka+\delta)}\\
+\dfrac{2m\alpha}{k\hbar^2}\sin(ka)+\cos(ka)&=\dfrac{A'}{A}\cos(ka+\delta)\\
+\dfrac{2m\alpha}{k\hbar^2}\sin(ka)+\cos(ka)&=\dfrac{\sin(ka)}{\sin(ka+\delta)}\cos(ka+\delta)\\
+\dfrac{2m\alpha}{k\hbar^2}+\cot(ka)&=\cot(ka+\delta)\\
 \end{align}$$
-We're talking about small energies, where $k\rightarrow0$, so we can reduce the form of this more:
-Let $\beta=\tfrac{2m\alpha a}{\hbar^2}$.
+In the limiting case that $ka\ll 1$, $\cot(x+\delta x)\approx\dfrac{1}{x+\delta x}$:
 $$\begin{align}
-\cot(ka+\delta)&=\cot(ka)+\dfrac{\beta/a}{k}\\
-\dfrac{1}{ka+\delta}&\approx\dfrac{1}{ka}+\dfrac{\beta/a}{k}\\
-\dfrac{1}{ka+\delta}&\approx\dfrac{1+\beta}{ka}\\
-ka+\delta&\approx\dfrac{ka}{1+\beta}\\
-\delta&\approx\dfrac{ka}{1+\beta}-ka\\
-&\approx\dfrac{ka}{1+\beta}-ka\dfrac{1+\beta}{1+\beta}\\
-&\approx\dfrac{ka-ka-ka\beta}{1+\beta}\\
-\Aboxed{\delta&\approx-k\dfrac{\beta a}{1+\beta}},\ \ \beta=\dfrac{2m\alpha a}{\hbar^2}
+\dfrac{2m\alpha}{k\hbar^2}+\cot(ka)&=\cot(ka+\delta)\\
+\dfrac{2m\alpha a}{k\hbar^2 a}+\dfrac{1}{ka}&\approx\dfrac{1}{ka+\delta}\\
+\dfrac{\beta+1}{ka}&\approx\dfrac{1}{ka+\delta}\\
+ka+\delta&\approx\dfrac{ka}{\beta+1}\\
+\dfrac{\beta+1}{ka}&\approx\dfrac{1}{ka+\delta}\\
+\delta&\approx\dfrac{ka}{\beta+1}-ka\\
+&\approx ka\dfrac{1-\beta-1}{\beta+1}\\
+\Aboxed{\delta&\approx-k\dfrac{\beta a}{\beta+1}},\ \ \beta=\dfrac{2m\alpha a}{\hbar^2}
 \end{align}$$
-From there we can use the equation we used in class: 
+From there we can use the equation we used in class (low energy limit for $l=0$): 
+If we assume that $\delta\ll 1$:
 $$\begin{align}
-f(\theta)&=\dfrac{1}{k}e^{i\delta}\sin\delta\\
-&\approx\dfrac{1}{k}e^{-ik\tfrac{\beta a}{1+\beta}}\sin\left(-k\dfrac{\beta a}{1+\beta}\right)\\
-\Aboxed{f(\theta)&\approx-\dfrac{1}{k}e^{-ik\tfrac{\beta a}{1+\beta}}\sin\left(k\dfrac{\beta a}{1+\beta}\right)}
+f(\theta)&\approx\dfrac{1}{k}e^{i\delta}\sin\delta\\
+&\approx\dfrac{1}{k}(1)\delta\\
+&\approx-\dfrac{1}{k}k\dfrac{\beta a}{\beta+1}\\
+\Aboxed{f(\theta)&\approx-\dfrac{\beta a}{\beta+1}}
 \end{align}$$
 ---
 #### Question 1.2
 Find the differential cross-section $D(\theta)$.
 $$\begin{align}
-D(\theta)&=|f(\theta)|^2 & \delta&=-k\dfrac{\beta a}{1+\beta}\\
-&=\left|\dfrac{1}{k}e^{i\delta}\sin\delta\right|^2\\
-&=\dfrac{1}{k^2}\left|e^{i\delta}\right|^2\sin^2\delta\\
-\Aboxed{D(\theta)&=\dfrac{1}{k^2}\sin^2\delta} & \delta&=-k\dfrac{\beta a}{1+\beta}
+D(\theta)&=|f(\theta)|^2\\
+&=\left|-\dfrac{\beta a}{\beta+1}\right|^2\\
+\Aboxed{D(\theta)&=\left(\dfrac{\beta a}{\beta+1}\right)^2}
 \end{align}$$
 ---
 #### Question 1.3
@@ -87,9 +85,9 @@ Find the total cross-section $\sigma$.
 Express your answers in terms of the dimensionless quantity $\beta=\tfrac{2ma\alpha}{\hbar^2}$.
 $$\begin{align}
 \sigma&=\int D(\theta)\ d\Omega\\
-&=\int\dfrac{1}{k^2}\sin^2\delta\ d\Omega\\
-&=\dfrac{1}{k^2}\sin^2\delta\cdot\int\ d\Omega\\
-\Aboxed{\sigma&=\dfrac{4\pi}{k^2}\sin^2\left(k\dfrac{\beta a}{1+\beta}\right)}
+&=\int\left(\dfrac{\beta a}{\beta+1}\right)^2\ d\Omega\\
+&=\left(\dfrac{\beta a}{\beta+1}\right)^2\int d\Omega\\
+\Aboxed{\sigma&=4\pi\left(\dfrac{\beta a}{\beta+1}\right)^2}
 \end{align}$$
 ---
 ### Question 2
@@ -174,49 +172,9 @@ $$\begin{align}
 &=Ae^{i\pi}e^{-2ika}e^{-ikx}\\
 \end{align}$$
 The $\pi$ isn't always $\pi$, since it depends on $\cot(k'a)$, so the net effect is $0$ overall.
-This also applies for the position-dependent term, it's not a constant phase shift.
+This also applies for the position-dependent term, since it's not a constant phase shift.
 
 Therefore, the shift only comes from the $e^{-2ika}$ term. Since we assume that the reflection phase shift happens in 2 parts (entering and exiting), we say that:
 $$\begin{align}
 e^{2i\delta}&=e^{-2ika} \implies \boxed{\delta=-ka}
 \end{align}$$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-For $E\ll V_0$, we can approximate: $k'=\dfrac{\sqrt{2mV_0}}{\hbar}$.
-Using that in the equation for our reflected wavefunction, we get:
-$$\begin{align}
-\lim_{k'/k\rightarrow\infty}\psi_{1R}
-&=\lim_{k'/k\rightarrow\infty}A\left(\dfrac{ik-k'\cot(k'a)}{ik+k'\cot(k'a)}\right)e^{-2ika}e^{-ikx}\\
-&\approx A\lim_{k'/k\rightarrow\infty}\left(\dfrac{ik-k'\cot(k'a)}{ik+k'\cot(k'a)}\right)e^{-2ika}e^{-ikx}\\
-&\approx A(-1)e^{-2ika}e^{-ikx}\\
-\end{align}$$
-
-
-
-
-
-
-
-
-
-Reminder: $k=\dfrac{\sqrt{2mE}}{\hbar}$ and $k'=\dfrac{\sqrt{2m(E+V_0)}}{\hbar}$, then:
-$$\begin{align}
-\dfrac{k'}{k}&=\dfrac{\sqrt{2m(E+V_0)}}{\sqrt{2mE}}\\
-&=\sqrt{\dfrac{E+V_0}{E}}\\
-&=\sqrt{1+\dfrac{V_0}{E}}\\
-\Aboxed{\dfrac{k'}{k}&\approx\sqrt{\dfrac{V_0}{E}}}, V_0\gg E
-\end{align}$$
-
----
