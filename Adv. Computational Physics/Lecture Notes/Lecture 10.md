@@ -8,6 +8,7 @@ Regression is the process of approximating a function from a finite data set.
 ### The Curse of Dimensionality
 As you add dimensions, the number of points increases exponentially.
 The only way to overcome it is to imbue "prior knowledge" about the function we aim to learn with our regression model.
+
 ### Prior Probability Distribution
 A prior represents our initial belief about the function before seeing data.
 We constrain the function space in a controlled fashion.
@@ -41,11 +42,13 @@ $$\begin{align}
 f(x)&=\sum_{s=1}^S\xi_sT_s(x)
 \end{align}$$
 The prior is a probability distribution over the coefficients $\xi_s$:
-
-
+$$\begin{align}
+p(\xi)&\propto e^{-S[f]}\\
+S[f]&=\dfrac{1}{2}\sum_{s,s'=1}^SA_{ss'}\xi_s\xi_{s'}
+\end{align}$$
 For example, action could be determined in terms of hyperparameters as the following:
 $$\begin{align}
-S[f]&=\dfrac{1}{2}\sum_{ss'}A_{ss'}\xi_s\xi_{s'}=\int_D\left[\dfrac{t}{2}f(x)^2+\dfrac{\kappa}{2}(\vec\nabla f)^2+\dfrac{\epsilon}{2}\sum_s\xi_s^2\right]
+S[f]&=\int_D\left[\dfrac{t}{2}f(x)^2+\dfrac{\kappa}{2}(\vec\nabla f)^2+\dfrac{\epsilon}{2}\sum_s\xi_s^2\right]
 \end{align}$$
 From the prior, we define a kernel function which represents how function values at different points are correlated and fully encodes our prior information:
 $$\begin{align}
@@ -55,8 +58,8 @@ Given a dataset composed by $(x_\alpha,E_\alpha,\sigma_\alpha)$, we calculate th
 $$\begin{align}
 \bar{K}_{\alpha\beta}&=K(x_\alpha,x_\beta)+\sigma_\alpha^2\delta_{\alpha\beta}
 \end{align}$$
-
-And posterior variance:
+The posterior expectation value and variance of $f(x)$ are given by:
 $$\begin{align}
+\braket{f(x)}&=\sum_{\alpha,\beta}K(x,x_\alpha)[\bar{K}^{-1}]_{\alpha\beta}E_\beta\\
 \sigma^2_\text{post}(x)&=K(x,x)-\sum_{\alpha,\beta}K(x,x_\alpha)[\bar{K}^{-1}]_{\alpha\beta}K(x_\beta,x)
 \end{align}$$

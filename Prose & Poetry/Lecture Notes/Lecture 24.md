@@ -11,3 +11,10 @@
 
 ---
 ### Warm-Up Exercise
+Write a dialogue in which Person A and Person B are discussing what Person C thinks of Person D.
+(This introduces characters and conflict between them)
+If you finish before time is up, write a scene where C and/or D show(s) up (where A and B are).
+
+A: You just lost the game.
+B: Shut the fuck up.
+
