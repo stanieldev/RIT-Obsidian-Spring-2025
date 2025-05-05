@@ -14,22 +14,6 @@ Use Monte Carlo (adapted for 3D vector spins) to study how the system's behavior
 
 Calculate quantities like energy $E(T)$ and magnetization $M(T)$ (or the scalar quantity $M^2(T)$) for different $\alpha$, and analyze the impact of interaction range on ordering tendencies at low temperatures, connecting to the known results in the literature.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### The Ising Model
 In common literature, the Ising model is used in order to model the a grid of particles with spin in order to find how the system behaves and is modeled.
 
